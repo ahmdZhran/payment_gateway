@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-class DioService {
+class ApiService {
   final Dio dio = Dio();
 
   Future<Response> post(
