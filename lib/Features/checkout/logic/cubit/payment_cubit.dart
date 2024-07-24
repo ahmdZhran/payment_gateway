@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:checkout_payment_ui/Features/checkout/data/models/payment_intent_input_model/payment_intent_input_mode.dart';
 import 'package:checkout_payment_ui/Features/checkout/data/repos/check_out_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,5 +23,11 @@ class PaymentCubit extends Cubit<PaymentState> {
         PaymentSuccess(),
       ),
     );
+  }
+
+  @override
+  void onChange(Change<PaymentState> change) {
+    log(change.toString() as num);
+    super.onChange(change);
   }
 }
