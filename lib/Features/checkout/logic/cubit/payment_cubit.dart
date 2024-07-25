@@ -9,6 +9,7 @@ class PaymentCubit extends Cubit<PaymentState> {
   PaymentCubit(this.checkoutRepo) : super(PaymentInitial());
 
   final CheckoutRepo checkoutRepo;
+
   bool _isClosed = false;
 
   @override
@@ -32,7 +33,7 @@ class PaymentCubit extends Cubit<PaymentState> {
           emit(PaymentFailure(l.errMessage));
         },
         (r) {
-          print('PaymentSuccess state emitted');
+          print('PaymentSuccess state emittedddddddddddddddddddddddddddddddddddddddddddddd');
           emit(PaymentSuccess());
         },
       );
