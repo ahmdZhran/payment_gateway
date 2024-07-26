@@ -38,5 +38,6 @@ class StripeService {
     await initPaymentSheet(
         paymentIntentClientSecret: paymentIntentModel.clientSecret!);
     await displayPaymentSheet();
+    // that I was forgot 
   }
 }
