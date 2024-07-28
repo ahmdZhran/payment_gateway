@@ -1,3 +1,4 @@
+
 import 'package:checkout_payment_ui/Features/checkout/data/models/ephemeral_key_model/ephemeral_key_model.dart';
 import 'package:checkout_payment_ui/Features/checkout/data/models/payment_intent_input_model/payment_intent_input_mode.dart';
 import 'package:checkout_payment_ui/Features/checkout/data/models/payment_intent_models/payment_intent_models.dart';
@@ -20,10 +21,12 @@ class StripeService {
     return paymentIntentModel;
   }
 
-  Future initPaymentSheet({required String paymentIntentClientSecret}) async {
+  Future initPaymentSheet({required String paymentIntentClientSecret, required String ephemeralKeySecret}) async {
     await Stripe.instance.initPaymentSheet(
       paymentSheetParameters: SetupPaymentSheetParameters(
           paymentIntentClientSecret: paymentIntentClientSecret,
+          customerEphemeralKeySecret: ephemeralKeySecret,
+          customerId: 'cus_QYKKmq6LjmH2Xu',
           merchantDisplayName: 'Ahmed' // name of the buisness owner
           ),
     );
