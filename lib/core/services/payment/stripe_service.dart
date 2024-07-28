@@ -42,18 +42,18 @@ class StripeService {
     // that I was forgot
   }
 
-    Future<EphemeralKeyModel> createEphemeralKey(
+  Future<EphemeralKeyModel> createEphemeralKey(
       {required String customerId}) async {
     var response = await apiService.post(
-      body:{
-        'customer' : customerId,
-      }
-      url: 'https://api.stripe.com/v1/payment_intents',
-      token: ApiKeys.secretkey,
-      contentType: Headers.formUrlEncodedContentType,
-    );
-    var paymentIntentModel = PaymentIntentModel.fromJson(response.data);
-    return paymentIntentModel;
+        body: {'customer': customerId},
+        url: 'https://api.stripe.com/v1/payment_intents',
+        token: ApiKeys.secretkey,
+        contentType: Headers.formUrlEncodedContentType,
+        headers: {
+          'Authorization': "Bearer ${ApiKeys.secretkey}",
+          'Stripe-Version': '2024-06-20',
+        });
+    var ephermeralKey = EphemeralKeyModel.fromJson(response.data);
+    return ephermeralKey;
   }
-
 }
