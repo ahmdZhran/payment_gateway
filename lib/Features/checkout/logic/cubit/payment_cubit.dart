@@ -33,7 +33,8 @@ class PaymentCubit extends Cubit<PaymentState> {
           emit(PaymentFailure(l.errMessage));
         },
         (r) {
-          print('PaymentSuccess state emittedddddddddddddddddddddddddddddddddddddddddddddd');
+          print(
+              'PaymentSuccess state emittedddddddddddddddddddddddddddddddddddddddddddddd');
           emit(PaymentSuccess());
         },
       );
