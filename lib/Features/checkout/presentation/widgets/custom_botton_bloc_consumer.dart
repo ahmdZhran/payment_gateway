@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../core/widgets/custom_button.dart';
-import '../../../data/models/payment_intent_input_model/payment_intent_input_mode.dart';
-import '../../../logic/cubit/payment_cubit.dart';
-import '../thank_you_view.dart';
+import '../../../../core/widgets/custom_button.dart';
+import '../../data/models/payment_intent_input_model/payment_intent_input_mode.dart';
+import '../../logic/cubit/payment_cubit.dart';
+import '../views/thank_you_view.dart';
 
 class CustomButtonBlocConsumer extends StatelessWidget {
   const CustomButtonBlocConsumer({super.key});

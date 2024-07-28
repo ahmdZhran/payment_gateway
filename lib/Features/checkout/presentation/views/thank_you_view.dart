@@ -1,4 +1,4 @@
-import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/thank_you_view_body.dart';
+import 'package:checkout_payment_ui/Features/checkout/presentation/widgets/thank_you_view_body.dart';
 import 'package:checkout_payment_ui/core/widgets/cutom_app_bar.dart';
 import 'package:flutter/material.dart';
 

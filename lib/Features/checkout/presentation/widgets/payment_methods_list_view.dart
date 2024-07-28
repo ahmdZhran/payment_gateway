@@ -1,4 +1,4 @@
-import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/payment_method_item.dart';
+import 'package:checkout_payment_ui/Features/checkout/presentation/widgets/payment_method_item.dart';
 import 'package:flutter/material.dart';
 
 class PaymentMethodsListView extends StatefulWidget {

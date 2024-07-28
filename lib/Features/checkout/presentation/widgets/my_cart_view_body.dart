@@ -1,7 +1,7 @@
 import 'package:checkout_payment_ui/Features/checkout/data/repos/checkout_repo_impl.dart';
 import 'package:checkout_payment_ui/Features/checkout/logic/cubit/payment_cubit.dart';
-import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/cart_info_item.dart';
-import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/total_price_widget.dart';
+import 'package:checkout_payment_ui/Features/checkout/presentation/widgets/cart_info_item.dart';
+import 'package:checkout_payment_ui/Features/checkout/presentation/widgets/total_price_widget.dart';
 import 'package:checkout_payment_ui/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
